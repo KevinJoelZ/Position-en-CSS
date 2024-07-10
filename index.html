@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posición en CSS</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Posición en CSS</h1>
+        <nav>
+            <ul>
+                <li><a href="#static">Posición Static</a></li>
+                <li><a href="#relative">Posición Relative</a></li>
+                <li><a href="#absolute">Posición Absolute</a></li>
+                <li><a href="#fixed">Posición Fixed</a></li>
+                <li><a href="#sticky">Posición Sticky</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="static">
+            <h2>Posición Static</h2>
+            <p>La posición estática es el valor por defecto. Los elementos se posicionan según el flujo normal del documento.</p>
+            <p>La posición estática es el valor por defecto que tienen todos los elementos HTML. Cuando un elemento tiene la posición estática, se coloca en el flujo normal del documento, según el orden en que aparece en el HTML. Esto significa que los elementos se posicionan uno detrás de otro, de arriba a abajo y de izquierda a derecha, según el flujo de bloques o en línea.</p>
+            <p>Los elementos con posición estática no se ven afectados por las propiedades de desplazamiento <code>top</code>, <code>right</code>, <code>bottom</code> y <code>left</code>. Estas propiedades no tienen ningún efecto en un elemento estático, ya que se basa en la disposición natural del flujo del documento.</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXPQNHAP0c7Wevxh4WTQO4jOFhtVTIHDDEzQ&s" class="img1" alt="Ejemplo de posición estática">
+        </section>
+
+        <section id="relative">
+            <h2>Posición Relative</h2>
+            <p>La posición relativa se basa en la posición estática del elemento, pero se puede ajustar usando las propiedades top, right, bottom y left.</p>
+            <p>La posición relativa permite desplazar un elemento respecto a su posición original en el flujo del documento. Se puede utilizar las propiedades <code>top</code>, <code>right</code>, <code>bottom</code> y <code>left</code> para ajustar su posición con respecto a sí mismo.</p>
+            <p>Es importante destacar que un elemento con posición relativa no se quita del flujo normal del documento, por lo que el espacio que ocupa en el diseño aún está reservado para él.</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSueno4XTBTy96TvmaDx8H1FgSu35Ju0-JwnA&s" class="img2" alt="Ejemplo de posición relativa">
+        </section>
+
+        <section id="absolute">
+            <h2>Posición Absolute</h2>
+            <p>La posición absoluta se posiciona respecto al primer elemento ancestro que no tenga la posición estática. Si no hay tal elemento, se posiciona respecto al elemento raíz.</p>
+            <p>La posición absoluta posiciona un elemento en relación con su primer elemento padre que tenga una posición diferente de estática (es decir, relativa, absoluta o fija). Si no hay un padre con posición establecida, se posiciona en relación con el elemento raíz (normalmente el cuerpo del documento).</p>
+            <p>Los elementos con posición absoluta se desplazan fuera del flujo normal del documento, lo que significa que no ocupan espacio en el diseño y pueden superponerse a otros elementos.</p>
+            <img src="https://keepcoding.io/wp-content/uploads/2022/06/position-absolute-en-CSS.jpg" class="img3" alt="Ejemplo de posición absoluta">
+        </section>
+
+        <section id="fixed">
+            <h2>Posición Fixed</h2>
+            <p>La posición fija fija el elemento respecto a la ventana del navegador. No se desplaza cuando se hace scroll.</p>
+            <p>La posición fija fija el elemento en una posición específica con respecto a la ventana del navegador. Este tipo de posición es útil para elementos que deben permanecer visibles mientras el usuario se desplaza por la página, como barras de navegación o anuncios.</p>
+            <p>Los elementos con posición fija no se mueven cuando se hace scroll, manteniéndose en la misma posición relativa al borde de la ventana del navegador.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/SpL3EToqaXA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        </section>
+
+        <section id="sticky">
+            <h2>Posición Sticky</h2>
+            <p>La posición sticky alterna entre relativa y fija, dependiendo de la posición del scroll. Es útil para menús o elementos que deben estar siempre visibles.</p>
+            <p>La posición sticky combina características de las posiciones relativa y fija. Se comporta como posición relativa hasta que un elemento alcanza una posición específica durante el scroll, momento en el cual se fija en esa posición. Esto es útil para elementos que deben ser visibles mientras el usuario se desplaza por la página, pero que luego deberían comportarse como elementos relativos.</p>
+            <p>Los elementos con posición sticky se quedan "pegados" a una ubicación específica en la ventana del navegador durante el scroll, pero continúan respetando el flujo normal del documento hasta que alcanzan su punto de fijación.</p>
+            <img src="https://i.ytimg.com/vi/6ovJsUbS0VI/maxresdefault.jpg" class="img4"  alt="Ejemplo de posición sticky">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Posición en CSS. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

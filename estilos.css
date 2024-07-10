@@ -1,0 +1,108 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body estilos */
+body {
+    font-family: Georgia, serif, sans-serif;
+    line-height: 1.6;
+    background-color: #3badda67;
+    color: #333;
+}
+
+/* Header estilos */
+header {
+    background-color: #35424a;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(26, 1, 252, 0.856);
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content estilos */
+main {
+    padding: 20px;
+}
+
+main section {
+    margin-bottom: 20px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(26, 1, 252, 0.856);
+}
+
+main section h2 {
+    margin-bottom: 10px;
+    border-bottom: 2px solid #35424a;
+    padding-bottom: 5px;
+}
+
+main section p {
+    margin-bottom: 10px;
+}
+
+main section img, main section iframe {
+    max-width: 100%;
+    display: block;   
+    margin: 10px auto
+}
+
+/* Footer estilos */
+footer {
+    background-color: #35424a;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(26, 1, 252, 0.856);
+}
+
+/* Imágenes estilos*/
+.img1{
+    width: 350px;
+    height: 250px;
+    border-radius: 12px;
+}
+.img2{
+    width: 350px;
+    height: 250px;
+    border-radius: 12px;
+    
+}
+.img3{
+    width: 350px;
+    height: 250px;
+    border-radius: 12px;
+}
+.img4{
+    width: 350px;
+    height: 250px;
+    border-radius: 12px;
+}
